@@ -7,7 +7,9 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "database:push": "drizzle-kit push",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "database:studio": "drizzle-kit studio"
   },
   "dependencies": {
@@ -65,7 +67,9 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^19",
+    "vitest": "^2.1.8",
+    "@vitest/ui": "^2.1.8",
+    "@vitest/coverage-v8": "^2.1.8",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.5",
     "eslint": "^9",
