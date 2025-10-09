@@ -4,8 +4,10 @@ interface Props{
 
 
 const Layout = ({ children }: Props) =>{
+    
     return (
     
+        
         <div>
             {children}
             </div>
