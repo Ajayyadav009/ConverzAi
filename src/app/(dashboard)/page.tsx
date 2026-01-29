@@ -6,7 +6,7 @@ import { redirect  } from "next/navigation";
 
    const session = await auth.api.getSession({
     headers: await headers(),
-
+    
    });
    if(!session){
     redirect("/sign-in");
